@@ -53,10 +53,13 @@ namespace NCM_Utilities
             SingleSongData.Rows.Add("曲名", SongJson.songs[0].name);
 
             string transname = "";
-            for (int i = 0; i < SongJson.songs[0].transNames.Length; i++)
+            if (SongJson.songs[0].transName != null) //若transName项为null，即为没有译名
             {
-                if (i != 0) { transname += " / "; }
-                transname += SongJson.songs[0].transNames[i];
+                for (int i = 0; i < SongJson.songs[0].transNames.Length; i++)
+                {
+                    if (i != 0) { transname += " / "; }
+                    transname += SongJson.songs[0].transNames[i];
+                }
             }
             SingleSongData.Rows.Add("译名", transname);
 
