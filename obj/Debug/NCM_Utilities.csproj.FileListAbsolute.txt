@@ -16,7 +16,6 @@ D:\Github\NCM_Utilities\bin\Debug\NCM_Utilities.exe
 D:\Github\NCM_Utilities\bin\Debug\NCM_Utilities.pdb
 D:\Github\NCM_Utilities\bin\Debug\Newtonsoft.Json.dll
 D:\Github\NCM_Utilities\bin\Debug\Newtonsoft.Json.xml
-D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.csprojAssemblyReference.cache
 D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.Form1.resources
 D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.Properties.Resources.resources
 D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.csproj.GenerateResource.cache
@@ -24,3 +23,4 @@ D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.csproj.CoreCompileInputs.cache
 D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.csproj.CopyComplete
 D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.exe
 D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.pdb
+D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.csproj.AssemblyReference.cache
