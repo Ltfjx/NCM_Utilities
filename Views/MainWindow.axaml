@@ -1,0 +1,51 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:NCM_Utilities.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="NCM_Utilities.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="NCM_Utilities"
+        TransparencyLevelHint="AcrylicBlur"
+        Background="Transparent"
+        ExtendClientAreaToDecorationsHint="True">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+  
+    <Panel>
+      
+      <!-- 样式 -->
+      <ExperimentalAcrylicBorder IsHitTestVisible="False">
+        <ExperimentalAcrylicBorder.Material>
+          <ExperimentalAcrylicMaterial
+              BackgroundSource="Digger"
+              TintColor="White"
+              TintOpacity="0.5"
+              MaterialOpacity="0.1" />
+        </ExperimentalAcrylicBorder.Material>
+      </ExperimentalAcrylicBorder>
+      <!-- 样式 -->
+
+      <!-- 标题 -->  
+    <TextBlock Margin="10 10 0 0" FontSize="16">Netease Cloud Music Utilities</TextBlock>
+    <StackPanel>
+    <DockPanel Margin="10 40 10 10" VerticalAlignment="Top">
+      <Button Name="Button_GetInfo" Click="Button_GetInfo" DockPanel.Dock="Right" Margin="0 0 0 0"></Button>
+      <TextBox Margin="0 0 10 0" Watermark="输入URL/歌曲ID" ></TextBox>
+    </DockPanel>
+    <DockPanel Margin="10 0 10 0">  
+      <Grid>
+        <DataGrid AutoGenerateColumns="True" Items="{Binding SingleDataGrid}" >
+        </DataGrid>
+      </Grid>
+    </DockPanel>
+    </StackPanel>
+
+    </Panel>
+  
+  
+
+</Window>

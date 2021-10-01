@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Avalonia.Controls;
+using System;
 using System.IO;
 using System.Net;
 using System.Text;
-using System.Windows.Forms;
 
 namespace NCM_Utilities
 {
@@ -10,7 +10,7 @@ namespace NCM_Utilities
     {
         public static string GetPostReturn(string url)
         {
-            
+
 
             byte[] data = Encoding.UTF8.GetBytes("");//参数
 
@@ -85,7 +85,19 @@ namespace NCM_Utilities
 
         }
 
+        static public void RestoreButtonText(object text)
+        {
+            System.Threading.Thread.Sleep(2000);
+            // NCM_Utilities.ViewModels.MainWindowViewModel. = "1";
+        }
 
-
+        static public void SingleDataGridAdd(string info, string value)
+        {
+                new Models.SingleSongInfoDataGrid()
+                {
+                    Info = "New First Name",
+                    Value = "New Last Name"
+                };
+        }
     }
 }
