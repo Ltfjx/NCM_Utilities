@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="NCM_Utilities.exe" version="1.0.0.0" publicKeyToken="eac5e41ad011a44c" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="NCM_Utilities" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="NCM_Utilities.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC 清单选项
+             如果想要更改 Windows 用户帐户控制级别，请使用
+             以下节点之一替换 requestedExecutionLevel 节点。n
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            指定 requestedExecutionLevel 元素将禁用文件和注册表虚拟化。
+            如果你的应用程序需要此虚拟化来实现向后兼容性，则删除此
+            元素。
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NCM_Utilities.exe" size="34784">
+      <assemblyIdentity name="NCM_Utilities" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5jX9PdaWGN1hTAFW/TTgpvGg64g/KtSVN546LluoEYI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="701992">
+      <assemblyIdentity name="Newtonsoft.Json" version="13.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tiSUnfiw46YVP9+3MKfG9JkLZZLuDZIuF4hDPSdmEPM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="NCM_Utilities.exe.config" size="191">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nZbwgbUTWhOLr0mMKl999OOCnM45RTcbMWz0YfZTgVQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- 设计此应用程序与其一起工作且已针对此应用程序进行测试的
+           Windows 版本的列表。取消评论适当的元素，
+           Windows 将自动选择最兼容的环境。 -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+  <application xmlns="urn:schemas-microsoft-com:asm.v3">
+    <windowsSettings>
+      <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true</dpiAware>
+    </windowsSettings>
+  </application>
+<publisherIdentity name="CN=LAPTOP-VRN6ABB6\ltfjx" issuerKeyHash="014c3b22a77be6929407bc0b61d5a21eb7a3a242" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kPtLemMGaUjwKqoeq3RtE/p8b8ZdvkhSEsBicdasMTY=</DigestValue></Reference></SignedInfo><SignatureValue>DoYeKxNSKF5x7Syn9asZpBgItq5y/maCO0UydMDljH0Lfxc9tx9A8xY0edizknKHJgqSJUx+OaDIEt+Ec4Xy1Le13dLBGlClKNJTIi6MoTvj/MJlW9IQZVLPk1KpESMsJ8yoiBt1s+RF/im8Fx9LJn+GR2U3cVCFx5MT6VxQRBQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sdH/Q2nx+RuS73ZuDTfRGTemaVLicfPvNvsnh+tH8g7WdUbbiQDaxnQgdIVhMFMV5DLQeAZgTghU0QHmaY8lTKDWh91q85+Ar6qKgxeXZ3O7iqlo3hPb5wws/Zhozy/Nu4p26Ehxr+ox11PY+Gwv5x6Y9rI0kNGTFLYm3JZIMKE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3631acd67162c0125248be5dc66f7cfa136d74ab1eaa2af0486906637a4bfb90" Description="" Url=""><as:assemblyIdentity name="NCM_Utilities.exe" version="1.0.0.0" publicKeyToken="eac5e41ad011a44c" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-VRN6ABB6\ltfjx</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>DWF7SCRkNETgRJyCgGjAKOjd9XFiIV9ngHU/zeOSaKk=</DigestValue></Reference></SignedInfo><SignatureValue>NywgF/INum56u3hdxQfuqZBbnFfAFEI6xhEYxJ0jh9twpPmCnxBdEthHOfvPiM0gLTHs2LSwmVe+1vjDQ560p/W2MaB4d+o2ZiMA6u8f8Pb9v7xSQeK16TPFf7SdzCyeK1URhCDZKI2yrf9/pcioTuXn9wOL1SD0KMg2FJfP2m8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sdH/Q2nx+RuS73ZuDTfRGTemaVLicfPvNvsnh+tH8g7WdUbbiQDaxnQgdIVhMFMV5DLQeAZgTghU0QHmaY8lTKDWh91q85+Ar6qKgxeXZ3O7iqlo3hPb5wws/Zhozy/Nu4p26Ehxr+ox11PY+Gwv5x6Y9rI0kNGTFLYm3JZIMKE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQfQgYHcKV/6hN9EbvVJdZKjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQBWAFIATgA2AEEAQgBCADYAXABsAHQAZgBqAHgwHhcNMjEwODIzMDkzODQxWhcNMjIwODIzMTUzODQxWjA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQBWAFIATgA2AEEAQgBCADYAXABsAHQAZgBqAHgwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALHR/0Np8fkbku92bg030Rk3pmlS4nHz7zb7J4frR/IO1nVG24kA2sZ0IHSFYTBTFeQy0HgGYE4IVNEB5mmPJUyg1ofdavOfgK+qioMXl2dzu4qpaN4T2+cMLP2YaM8vzbuKduhIca/qMddT2PhsL+cemPayNJDRkxS2JtyWSDChAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAV16St9zdC4Oz/z7G9MtnqurSZKmILTyeqVY/z1izQXPWZpgTwwjnOTRp26zqCq1uURE8yhmtIxpKuWat+yPoHEYa2FUvbNtfVXj7dQOgr2xTWMRGHz+yZL3fxlnoJGrVmQQO0PSgelW9YIPT1n+zxOmLygwz26neHM8mMmxR1o8=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

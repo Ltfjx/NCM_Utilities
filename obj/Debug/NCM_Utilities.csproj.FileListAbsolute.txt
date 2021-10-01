@@ -24,3 +24,7 @@ D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.csproj.CopyComplete
 D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.exe
 D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.pdb
 D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.csproj.AssemblyReference.cache
+D:\Github\NCM_Utilities\bin\Debug\NCM_Utilities.exe.manifest
+D:\Github\NCM_Utilities\bin\Debug\NCM_Utilities.application
+D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.exe.manifest
+D:\Github\NCM_Utilities\obj\Debug\NCM_Utilities.application
